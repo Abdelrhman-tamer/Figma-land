@@ -1,0 +1,98 @@
+:root {
+    --dark-color: #181818;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--dark-color);
+    height: max-content;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.heading {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+
+.heading h1 {
+    font-size: 80px;
+    line-height: 88px;
+}
+
+.heading p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.screens {
+    background: linear-gradient(to bottom, var(--dark-color), #0E0E0E);
+}
+
+.screens .image-screen {
+    animation: 5s screen linear infinite;
+}
+
+@keyframes screen {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.feat {
+    position: relative;
+}
+
+/* .img-feat {
+    max-width: 500px;
+} */
+
+
+.img-feat-2 {
+    position: absolute;
+    top: 65%;
+    left: 42%;
+}
+
+.gallery img {
+    border-radius: 10px;
+}
+
+.testimonials img {
+    width: 50px;
+}
+
+.testimonials .card {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.cta .holder {
+    background-color: #343434;
+    border-radius: 10px;
+}
+
+.cta .holder h2 {
+    font-size: 45px;
+}
