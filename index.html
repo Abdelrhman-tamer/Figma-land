@@ -17,115 +17,85 @@
 </head>
 
 <body>
-
+    <!-- NavBar Section Start -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/logo dark.svg" alt="">
+            <a class="navbar-brand order-1 order-lg-1 me-auto" href="#">
+                <img src="assets/logo.svg" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main"
-                aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
+            <form class="d-flex order-2 order-lg-3">
+                <button class="btn transparent-btn" type="submit">Login</button>
+            </form>
+            <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="main">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item mx-4">
-                        <a class="nav-link p-2 p-lg-3 active text-light" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link p-2 p-lg-3 text-light" href="#">Product</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link p-2 p-lg-3 text-light" href="#">About</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                        <a class="nav-link p-2 p-lg-3 text-light" href="#">Contact</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarSupportedContent">
+                <div class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">Product</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
             </div>
-            <a class="btn btn-outline-light main-btn" href="#">Login</a>
         </div>
     </nav>
-    <!-- NavBar End -->
+    <!-- NavBar Section End -->
 
-    <!-- Header Section Start -->
-    <div class="heading d-flex justify-content-center align-items-center">
-        <div class="text-center text-light mx-sm-4">
-            <h1 class="mb-5">Work at the speed <br>of thought</h1>
-            <p class="mb-5">Most calendars are designed for teams. Slate is designed for
-                <br>freelancers who want a simple way to plan their schedule.
-            </p>
-            <div class="btn-holder">
-                <a class="btn btn-primary main-btn mx-3 py-3 px-4 mt-5" href="#">Try For Free</a>
-                <a class="btn btn-outline-light main-btn mx-3 py-3 px-4 mt-5" href="#">Learn More</a>
-            </div>
+    <!-- Main Section Start -->
+    <div class="main text-center">
+        <div class="container">
+            <section>
+                <h1>Work at the speed of thought</h1>
+                <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to
+                    plan
+                    their schedule.
+                </p>
+                <div class="buttons-holder">
+                    <button class="btn btn-primary blue-btn" type="submit">Try For Free</button>
+                    <button class="btn transparent-btn" type="submit">Learn More</button>
+                </div>
+            </section>
 
         </div>
     </div>
-    <!-- Header Section End -->
+    <!-- Main Section End -->
 
     <!-- Screens Section Start -->
-    <div class="screens">
-        <img class="img-fluid image-screen" src="assets/Dashboard #1.svg" alt="">
-        <img class="img-fluid image-screen" src="assets/screens.svg" alt="">
-        <img class="img-fluid image-screen" src="assets/Chat Bot.svg #1.svg" alt="">
+    <div class="screens text-center">
+        <img class="img-fluid screen-image" src="assets/main-section/screens.svg" alt="">
     </div>
     <!-- Screens Section End -->
 
     <!-- Features Section Start -->
-    <div class="features text-center py-5 mt-5">
+    <div class="features">
         <div class="container">
-            <div class="main-title my-5 position-relative">
-                <h2 class="text-light mb-4 display-4">Features</h2>
-                <p class="text-light">
-                    Most calendars are designed for teams. Slate is designed for
-                    <br>freelancers who want a simple way to plan their schedule.
+            <div class="main-title">
+                <h1 class="text-uppercase">Features</h1>
+                <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to
+                    plan their schedule.
                 </p>
             </div>
             <div class="row">
-                <div class="col-md-6 col-lg-8">
-                    <div class="feat me-5 mb-5">
-                        <img class=" img-feat" src="assets/Chat Bot (2).svg" alt="">
-                        <img class="img-fluid img-feat-2" src="assets/Line Chart 1.svg" alt="">
-                    </div>
+                <div class="col-lg-8 col-sm-12 feat-img">
+                    <img class="img-fluid" src="assets/features-section/features-section.svg" alt="">
                 </div>
-                <div class="col-md-6 col-lg-4 my-auto">
-                    <div class="feat ms-4">
-                        <div class="feat-box mb-5">
-                            <div class="feat-head d-flex align-items-center justify-content-space-between">
-                                <img src="assets/ic_round-restaurant-menu.svg" alt="">
-                                <h5 class="text-light mt-4 ms-2">A single source
-                                    <br>of truth
-                                </h5>
-                            </div>
-                            <p class="text-start text-light mt-4">When you add work to your
-                                <br>Slate calendar we automatically
-                                calculate useful insights
-                            </p>
-                        </div>
-                        <div class="feat-box mb-5">
-                            <div class="feat-head d-flex align-items-center justify-content-space-between">
-                                <img src="assets/mdi_alien-outline.svg" alt="">
-                                <h5 class="text-light mt-4 ms-2">Intuitive
-                                    <br>interface
-                                </h5>
-                            </div>
-                            <p class="text-start text-light mt-4">When you add work to your
-                                Slate calendar we automatically
-                                calculate useful insights
-                            </p>
-                        </div>
-                        <div class="feat-box">
-                            <div class="feat-head d-flex align-items-center justify-content-space-between">
-                                <img src="assets/mdi_all-inclusive.svg" alt="">
-                                <h5 class="text-light mt-2 ms-2">Or with rules
-                                </h5>
-                            </div>
-                            <p class="text-start text-light mt-4 pe-5">When you add work to your
-                                Slate calendar we automatically
-                                calculate useful insights
-                            </p>
-                        </div>
+                <div class="col-lg-4 col-sm-12 align-self-center">
+                    <div class="feat-box">
+                        <img src="assets/features-section/spoon.svg" alt="">
+                        <span>A single source of truth</span>
+                        <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="assets/features-section/alien.svg" alt="">
+                        <span>Intuitive interface</span>
+                        <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
+                    </div>
+                    <div class="feat-box">
+                        <img src="assets/features-section/infinity.svg" alt="">
+                        <span>Or with rules</span>
+                        <p>When you add work to your Slate calendar we automatically calculate useful insights</p>
                     </div>
                 </div>
             </div>
@@ -133,93 +103,92 @@
     </div>
     <!-- Features Section End -->
 
-    <!-- Content Section Start -->
-    <div class="content text-center py-5 mt-5">
+    <!-- Contents Section Start -->
+    <div class="contents">
         <div class="container">
-            <div class="main-title my-5 position-relative">
-                <h2 class="text-light mb-4 display-4">Contents</h2>
-                <p class="text-light">
-                    We focus on ergonomics and meeting you where you work.
-                    <br>It's only a keystroke away..
+            <div class="main-title">
+                <h1 class="text-uppercase">Contents</h1>
+                <p>We focus on ergonomics and meeting you where you work.
+                    It's only a keystroke away.
                 </p>
             </div>
-            <div class="row">
-                <div class="card-box col-6 d-flex justify-content-end">
-                    <div class="card " style="width: 26rem;">
-                        <div class="card-body">
-                            <h5 class="card-title my-4">Work</h5>
-                            <p class="card-text px-5 mb-5">Ever wondered if you're too reliant
-                                on a client for work? Slate helps
-                                you identify.</p>
-                            <a href="#" class="btn btn-primary mb-5 px-5 py-2">Sign Up</a>
-                            <img src="assets/Macbook Pro.svg" class="card-img-top" alt="...">
-                        </div>
+            <div class="contents-box">
+                <div class="card contents-card">
+                    <div class="card-body inner-contents-card">
+                        <h5 class="card-title">Work</h5>
+                        <p class="card-text">Ever wondered if you're too reliant
+                            on a client for work? Slate helps
+                            you identify.
+                        </p>
+                        <a href="#" class="btn btn-primary blue-btn">Sign Up</a>
                     </div>
+                    <img class="img-fluid mb-4" src="assets/contents-section/Macbook Pro.svg" class="card-img-top"
+                        alt="...">
                 </div>
-                <div class="card-box col-6 d-flex justify-content-start">
-                    <div class="card " style="width: 26rem;">
-                        <div class="card-body">
-                            <h5 class="card-title my-4">Work</h5>
-                            <p class="card-text px-5 mb-5">Ever wondered if you're too reliant
-                                on a client for work? Slate helps
-                                you identify.</p>
-                            <a href="#" class="btn btn-primary px-5 py-2">Try For Free</a>
-                            <img src="assets/Boards Notifications.svg" class="card-img-top" alt="...">
-                        </div>
+                <div class="card contents-card">
+                    <div class="card-body inner-contents-card">
+                        <h5 class="card-title">Design With Real Data</h5>
+                        <p class="card-text">Ever wondered if you're too reliant
+                            on a client for work? Slate helps
+                            you identify.
+                        </p>
+                        <a href="#" class="btn btn-primary blue-btn">Try For Free</a>
                     </div>
+                    <img class="img-fluid" src="assets/contents-section/Boards Notifications.svg" class="card-img-top"
+                        alt="...">
                 </div>
-
-
-
             </div>
-
         </div>
     </div>
-    <!-- Content Section End -->
+    <!-- Contents Section End -->
 
     <!-- Gallery Section Start -->
-    <div class="gallery py-5 mt-5">
+    <div class="gallery text-center">
         <div class="container">
-            <div class="main-title my-5 position-relative text-center">
-                <h2 class="text-light mb-4 display-4">Gallery</h2>
-                <p class="text-light">
-                    We focus on ergonomics and meeting you where you work.
-                    <br>It's only a keystroke away.
+            <div class="main-title">
+                <h1 class="text-uppercase">Gallery</h1>
+                <p>We focus on ergonomics and meeting you where you work.
+                    It's only a keystroke away.
                 </p>
             </div>
-            <div class="cont d-flex flex-wrap justify-content-center gap-4">
-                <img class="img-fluid img-gallery" src="assets/Rectangle 1 (2).svg" alt="">
-                <img class="img-fluid img-gallery" src="assets/Rectangle 1.svg" alt="">
-                <img class="img-fluid img-gallery" src="assets/Rectangle 1 (1).svg" alt="">
-                <img class="img-fluid img-gallery" src="assets/Rectangle 1 (3).svg" alt="">
-                <img src="assets/Rectangle 1 (4).svg" alt="">
-                <img src="assets/Rectangle 1 (5).svg" alt="">
-                <img src="assets/Rectangle 1 (6).svg" alt="">
-                <a class="btn btn-outline-light main-btn-gallery py-3 px-5 mt-5" href="#">Learn More</a>
+            <div class="images-holder">
+                <img src="assets/gallery-section/Rectangle 1.svg" alt="">
+                <img src="assets/gallery-section/Rectangle 1 (1).svg" alt="">
+                <img src="assets/gallery-section/Rectangle 1 (2).svg" alt="">
+                <img src="assets/gallery-section/Rectangle 1 (3).svg" alt="">
+                <img class="d-none d-lg-inline" src="assets/gallery-section/Rectangle 1 (4).svg" alt="">
+                <img class="d-none d-md-inline image-inc" src="assets/gallery-section/Rectangle 1 (1).svg" alt="">
+                <img src="assets/gallery-section/Rectangle 1 (5).svg" alt="">
+                <img class="d-none d-lg-inline" src="assets/gallery-section/Rectangle 1 (6).svg" alt="">
+                <img class="mobile-image" src="assets/gallery-section/mobile/Rectangle 1.svg" alt="">
+                <img class="mobile-image" src="assets/gallery-section/mobile/Rectangle 1 (1).svg" alt="">
+                <img class="mobile-image" src="assets/gallery-section/mobile/Rectangle 1 (2).svg" alt="">
+                <img class="mobile-image" src="assets/gallery-section/mobile/Rectangle 1 (3).svg" alt="">
             </div>
+            <button class="btn transparent-btn" type="submit">See More</button>
         </div>
     </div>
     <!-- Gallery Section End -->
 
     <!-- Partners Section Start -->
-    <div class="partners py-5 mt-5">
+    <div class="partners">
         <div class="container">
-            <div class="main-title my-5 position-relative text-center">
-                <h2 class="text-light mb-4 display-4">Partners</h2>
-                <p class="text-light">
-                    We focus on ergonomics and meeting you where you work.
-                    <br>It's only a keystroke away.
+            <div class="main-title">
+                <h1 class="text-uppercase">Partners</h1>
+                <p>We focus on ergonomics and meeting you where you work.
+                    It's only a keystroke away.
                 </p>
             </div>
-            <div class="icons d-flex flex-wrap justify-content-center gap-5 pt-3">
-                <img class="mx-3" src="assets/logos_apple-app-store.svg" alt="">
-                <img class="mx-3" src="assets/logos_apiary.svg" alt="">
-                <img class="mx-3" src="assets/logos_android-icon.svg" alt="">
-                <img class="mx-3" src="assets/logos_basecamp.svg" alt="">
-                <img class="mx-3" src="assets/logos_airbnb.svg" alt="">
-                <img class="mx-3" src="assets/logos_ibm.svg" alt="">
-                <a class="btn btn-outline-light main-btn-gallery py-3 px-5 mt-5" href="#">Learn More</a>
-
+            <div class="partners-holder">
+                <div class="logos-holder">
+                    <img src="assets/partners-section/logos_apple-app-store.svg" alt="">
+                    <img src="assets/partners-section/logos_apiary.svg" alt="">
+                    <img src="assets/partners-section/logos_android-icon.svg" alt="">
+                    <img src="assets/partners-section/logos_basecamp.svg" alt="">
+                    <img src="assets/partners-section/logos_airbnb.svg" alt="">
+                    <img src="assets/partners-section/logos_ibm.svg" alt="">
+                </div>
+                <button class="btn transparent-btn" type="submit">All Partners</button>
             </div>
 
         </div>
@@ -227,85 +196,88 @@
     <!-- Partners Section End -->
 
     <!-- Testimonials Section Start -->
-    <div class="testimonials py-5 mt-5">
+    <div class="testimonials">
         <div class="container">
-            <div class="main-title my-5 position-relative text-center">
-                <h2 class="text-light mb-4 display-4">Testimonials</h2>
+            <div class="main-title">
+                <h1 class="text-uppercase">Testimonials</h1>
             </div>
             <div class="row">
-                <div class="col-6 d-flex justify-content-end py-2">
-                    <div class="card py-4 px-3 pe-5" style="width: 25rem;">
-                        <div class="card-body d-flex align-items-center gap-3">
-                            <img src="assets/Ellipse 2.svg" alt="...">
-                            <div class="text-wrapper">
-                                <p class="card-title fw-bold lh-1">Claire Bell</p>
-                                <p class="card-title fw-bold lh-1">Designer</p>
-                            </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="testi-box">
+                        <div class="header-title">
+                            <img src="assets/testimonials-section/Ellipse 2.svg" alt="">
+                            <span>
+                                <h5>Claire Bell</h5>
+                                <h5>Designer</h5>
+                            </span>
                         </div>
-                        <p class="card-text ps-3">Slate helps you see how many more days
+                        <p>Slate helps you see how many more days
                             you need to work to reach your financial
                             goal for the month and year. Slate helps
                             you see how many more days
                             you need to work to reach your financial
                             goal for the month and year.your financial
-                            goal for the month and year.</p>
+                            goal for the month and year.
+                        </p>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-start py-2 pb-4">
-                    <div class="card py-4 px-3 pe-5" style="width: 25rem;">
-                        <div class="card-body d-flex align-items-center gap-3">
-                            <img src="assets/Ellipse 2 (1).svg" alt="...">
-                            <div class="text-wrapper">
-                                <p class="card-title fw-bold lh-1">Francisco Lane</p>
-                                <p class="card-title fw-bold lh-1">Designer</p>
-                            </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="testi-box">
+                        <div class="header-title">
+                            <img src="assets/testimonials-section/Ellipse 2 (1).svg" alt="">
+                            <span>
+                                <h5>Claire Bell</h5>
+                                <h5>Designer</h5>
+                            </span>
                         </div>
-                        <p class="card-text ps-3">Slate helps you see how many more days
+                        <p>Slate helps you see how many more days
                             you need to work to reach your financial
                             goal for the month and year. Slate helps
                             you see how many more days
                             you need to work to reach your financial
                             goal for the month and year.your financial
-                            goal for the month and year.</p>
+                            goal for the month and year.
+                        </p>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end py-2">
-                    <div class="card py-4 px-3 pe-5" style="width: 25rem;">
-                        <div class="card-body d-flex align-items-center gap-3">
-                            <img src="assets/Ellipse 2 (2).svg" alt="...">
-                            <div class="text-wrapper">
-                                <p class="card-title fw-bold lh-1">Ralph Fisher</p>
-                                <p class="card-title fw-bold lh-1">Designer</p>
-                            </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="testi-box">
+                        <div class="header-title">
+                            <img src="assets/testimonials-section/Ellipse 2 (2).svg" alt="">
+                            <span>
+                                <h5>Claire Bell</h5>
+                                <h5>Designer</h5>
+                            </span>
                         </div>
-                        <p class="card-text ps-3">Slate helps you see how many more days
+                        <p>Slate helps you see how many more days
                             you need to work to reach your financial
                             goal for the month and year. Slate helps
                             you see how many more days
                             you need to work to reach your financial
                             goal for the month and year.your financial
-                            goal for the month and year.</p>
+                            goal for the month and year.
+                        </p>
                     </div>
                 </div>
-                <div class="col-6 d-flex justify-content-start pb-5">
-                    <div class="card py-4 px-3 pe-5" style="width: 25rem;">
-                        <div class="card-body d-flex align-items-center gap-3">
-                            <img src="assets/Ellipse 2 (3).svg" alt="...">
-                            <div class="text-wrapper">
-                                <p class="card-title fw-bold lh-1">Jorge Murphy</p>
-                                <p class="card-title fw-bold lh-1">Designer</p>
-                            </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="testi-box">
+                        <div class="header-title">
+                            <img src="assets/testimonials-section/Ellipse 2 (3).svg" alt="">
+                            <span>
+                                <h5>Claire Bell</h5>
+                                <h5>Designer</h5>
+                            </span>
                         </div>
-                        <p class="card-text ps-3">Slate helps you see how many more days
+                        <p>Slate helps you see how many more days
                             you need to work to reach your financial
                             goal for the month and year. Slate helps
                             you see how many more days
                             you need to work to reach your financial
                             goal for the month and year.your financial
-                            goal for the month and year.</p>
+                            goal for the month and year.
+                        </p>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -313,76 +285,79 @@
     <!-- Testimonials Section End -->
 
     <!-- CTA Section Start -->
-    <div class="cta py-5 mt-5">
+    <div class="cta">
         <div class="container">
-            <div class="holder d-flex justify-content-between align-items-center">
-                <div class="text-holder px-5 mx-3">
-                    <h2 class="text-light p">OpenType feature <br>and Variable fonts</h2>
-                    <a class="btn btn-primary main-btn py-3 px-5 mt-5" href="#">Try For Free</a>
+            <div class="cta-section">
+                <div class="cta-text">
+                    <h1>OpenType features and Variable fonts</h1>
+                    <a href="#" class="btn btn-primary blue-btn">Try For Free</a>
                 </div>
-                <img src="assets/Line Chart 1 (2).svg" alt="">
+                <img class="img-fluid d-none d-lg-inline" src="assets/cta-section/media-content.svg" alt="">
+                <img class="img-fluid d-lg-none" src="assets/cta-section/media-content mobile.svg" alt="">
             </div>
         </div>
     </div>
     <!-- CTA Section End -->
 
     <!-- Footer Section Start -->
-    <div class="footer">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="links-holder col-9 d-flex text-light">
-                    <div class="col-3 ">
-                        <h3 class="pb-4">Fingertipe</h3>
-                        <ul class="list-unstyled">
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Home</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Examples</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Pricing</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Updates</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h3 class="pb-4">Resources</h3>
-                        <ul class="list-unstyled">
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Home</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Examples</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Pricing</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Updates</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h3 class="pb-4">About</h3>
-                        <ul class="list-unstyled">
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Home</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Examples</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Pricing</a></li>
-                            <li class="pb-2"><a class="text-decoration-none text-light" href="">Updates</a></li>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2 some-screens">
+                    <div class="footer-links">
+                        <h5>fingertipe</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-3">
-                    <div class="wrapper mx-1 text-nowrap">
-                        <div class="address d-flex flex-nowrap align-items-center gap-3">
-                            <img src="assets/Vector (4).svg" alt="">
-                            <p class="text-light mt-3">7480 Mockingbird Hill undefined </p>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2 some-screens">
+                    <div class="footer-links">
+                        <h5>Resouces</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2 col-xl-2 col-xxl-2 some-screens">
+                    <div class="footer-links">
+                        <h5>About</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Updates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 some-screens-contact">
+                    <div class="footer-contact">
+                        <div class="address">
+                            <img src="assets/footer-section/bx_bx-map.svg" alt="">
+                            <span>7480 Mockingbird Hill undefined</span>
                         </div>
-                        <div class="phone d-flex gap-3 ps-2 ">
-                            <img src="assets/Vector.svg" alt="">
-                            <p class="text-light mt-3">(239) 555-0108</p>
+                        <div class="phone-num">
+                            <img src="assets/footer-section/ic_baseline-phone-android.svg" alt="">
+                            <span>(239) 555-0108</span>
                         </div>
-                        <div class="socials d-flex justify-content-start gap-4 pt-3">
-                            <img src="assets/Vector (1).svg" alt="">
-                            <img src="assets/Vector (2).svg" alt="">
-                            <img src="assets/Vector (3).svg" alt="">
+                        <div class="social-links">
+                            <img src="assets/footer-section/ant-design_twitter-outlined.svg" alt="">
+                            <img src="assets/footer-section/ant-design_facebook-filled.svg" alt="">
+                            <img src="assets/footer-section/ant-design_linkedin-filled.svg" alt="">
                         </div>
                     </div>
-
                 </div>
             </div>
-
         </div>
-    </div>
+    </footer>
     <!-- Footer Section End -->
+
 
     <!-- JavaScript Files -->
     <script src="all.min.js"></script>

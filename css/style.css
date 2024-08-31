@@ -1,47 +1,113 @@
-:root {
-    --dark-color: #181818;
-}
+/* Global Variables Start */
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: var(--dark-color);
-    height: max-content;
+    background-color: #181818;
+    color: white;
 }
 
+.transparent-btn {
+    padding: 10px 40px;
+    border: 1px solid white;
+    color: white;
+}
+
+.transparent-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.blue-btn {
+    padding: 15px 40px;
+    color: white;
+}
+
+.main-title {
+    max-width: 510px;
+    margin-inline: auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.main-title h1 {
+    font-size: 54px;
+    margin-bottom: 25px;
+}
+
+.main-title p {
+    font-size: 18px;
+}
+
+
+/* Global Variables End */
+
+/* NavBar Section Start */
 .navbar {
-    background-color: var(--dark-color);
+    margin-bottom: 35px;
+}
+
+.navbar .navbar-nav a {
+    margin: 0 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+.navbar .navbar-nav a:hover {
+    background-color: white;
+    color: black;
 }
 
 .navbar .navbar-toggler {
-    color: white;
-    font-size: 25px;
-    border-color: white;
+    margin-left: 12px;
+    padding-block: 10px;
+    font-size: 16px;
+    filter: brightness(0) invert(1);
+    border: 1px solid white;
 }
 
 .navbar .navbar-toggler:focus {
     box-shadow: none;
 }
 
-.heading {
-    background-color: var(--dark-color);
-    min-height: calc(100vh - 72px);
+/* NavBar Section End */
+
+/* Main Section Start */
+
+.main {
+    margin-top: 85px;
+    margin-bottom: 35px;
 }
 
-.heading h1 {
+.main section {
+    max-width: 650px;
+    margin: auto;
+}
+
+.main section h1 {
     font-size: 80px;
-    line-height: 88px;
+    margin-bottom: 28px;
 }
 
-.heading p {
+.main section p {
     font-size: 20px;
-    line-height: 30px;
+    margin-bottom: 80px;
 }
 
-.screens {
-    background: linear-gradient(to bottom, var(--dark-color), #0E0E0E);
+.main section .buttons-holder {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
-.screens .image-screen {
+.main section .buttons-holder .transparent-btn {
+    padding: 15px 40px;
+}
+
+/* Main Section End */
+
+/* Screens Section Start */
+
+.screens img {
     animation: 5s screen linear infinite;
 }
 
@@ -59,40 +125,607 @@ body {
     }
 }
 
-.feat {
-    position: relative;
+/* Screens Section End */
+
+/* Features Section Start */
+
+.features {
+    margin: 160px 0;
 }
 
-/* .img-feat {
-    max-width: 500px;
-} */
-
-
-.img-feat-2 {
-    position: absolute;
-    top: 65%;
-    left: 42%;
+.features .feat-box {
+    max-width: 240px;
+    margin-bottom: 70px;
 }
 
-.gallery img {
+.features .feat-box span {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.features .feat-box p {
+    margin-top: 20px;
+}
+
+/* Features Section End */
+
+/* Contents Section Start */
+
+.contents .contents-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.contents .contents-card {
+    max-width: 450px;
+    padding: 40px 35px 20px;
+}
+
+.contents .contents-card h5 {
+    margin-bottom: 40px;
+}
+
+.contents .contents-card p {
+    max-width: 270px;
+    margin-inline: auto;
+    margin-bottom: 60px;
+}
+
+/* Contents Section End */
+
+/* Gallery Section Start */
+
+.gallery {
+    margin: 160px 0;
+}
+
+.gallery .images-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery .images-holder img {
     border-radius: 10px;
 }
 
-.testimonials img {
-    width: 50px;
+.gallery button {
+    margin-top: 40px;
 }
 
-.testimonials .card {
-    background-color: transparent;
+.gallery .images-holder .mobile-image {
+    display: none;
+}
+
+/* Gallery Section End */
+
+/* Partners Section Start */
+
+.partners .partners-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.partners .logos-holder img {
+    margin-inline: 30px;
+}
+
+/* Partners Section End */
+
+/* Testimonials Section Start */
+
+.testimonials {
+    margin: 160px 0;
+    max-width: 848px;
+    margin-inline: auto;
+}
+
+.testimonials .testi-box {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
     border: 1px solid white;
+    border-radius: 10px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.testimonials .testi-box .header-title {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonials .testi-box .header-title h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Testimonials Section End */
+
+/* CTA Section Start */
+
+.cta .cta-section {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #343434;
+}
+
+.cta .cta-section .cta-text {
+    margin-left: 90px;
+}
+
+.cta .cta-section .cta-text h1 {
+    font-size: 43px;
+    margin-bottom: 40px;
+}
+
+/* CTA Section End */
+
+/* Fooster Section Start */
+
+footer {
+    margin: 160px 0 100px;
+}
+
+footer .footer-links h5 {
+    margin-bottom: 40px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    margin-block: 15px;
+}
+
+footer ul a {
+    text-decoration: none;
     color: white;
 }
 
-.cta .holder {
-    background-color: #343434;
-    border-radius: 10px;
+footer .footer-contact {
+    margin-left: 90px;
 }
 
-.cta .holder h2 {
-    font-size: 45px;
+footer .footer-contact .phone-num,
+footer .footer-contact .social-links {
+    margin-block: 20px;
 }
+
+footer .footer-contact .social-links {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Fooster Section End */
+
+/* Media Queries phones Start */
+@media (max-width: 576px) {
+
+    /* Global Variables Start */
+
+    .main-title {
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .main-title h1 {
+        font-size: 40px;
+    }
+
+    .main-title p {
+        font-size: 16px;
+    }
+
+    /* Global Variables End */
+
+    /* NavBar Section Start */
+    .navbar .navbar-brand img {
+        max-width: 150px;
+    }
+
+    .navbar .navbar-toggler {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+
+    .navbar .navbar-nav a {
+        margin-inline: 0;
+    }
+
+    .main-btn {
+        padding: 10px 25px;
+    }
+
+    /* NavBar Section End */
+
+    /* Main Section Start */
+    .main section h1 {
+        max-width: 365px;
+        margin-inline: auto;
+        font-size: 40px;
+    }
+
+    .main section p {
+        max-width: 300px;
+        margin-inline: auto;
+        font-size: 16px;
+    }
+
+    .main section .buttons-holder {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Main Section End */
+
+    /* Features Section Start */
+
+    .features {
+        margin-block: 100px;
+    }
+
+    .features .main-title {
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .features .main-title h1 {
+        font-size: 40px;
+    }
+
+    .features .main-title p {
+        font-size: 16px;
+    }
+
+    .features .feat-img {
+        max-width: 300px;
+        margin-inline: auto;
+    }
+
+    .features .feat-box {
+        margin-top: 50px;
+        margin-inline: auto;
+    }
+
+    /* Features Section End */
+
+    /* Contents Section Start */
+
+    .contents .contents-box {
+        max-width: 300px;
+        margin-inline: auto;
+        flex-direction: column;
+    }
+
+    .contents .contents-card a {
+        margin-bottom: 40px;
+    }
+
+    /* Contents Section End */
+
+    /* Gallery Section Start */
+
+    .gallery {
+        margin-block: 100px;
+    }
+
+    .gallery .images-holder .mobile-image {
+        display: flex;
+    }
+
+    .gallery .images-holder img:not(.mobile-image) {
+        display: none;
+    }
+
+    /* Gallery Section End */
+
+    /* Partners Section Start */
+
+    .partners .logos-holder {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .partners .logos-holder img {
+        max-width: 60px;
+        margin-top: 40px;
+    }
+
+    /* Partners Section End */
+
+    /* Testimonials Section Start */
+
+    .testimonials {
+        margin: 100px 0;
+    }
+
+    .testimonials .testi-box {
+        max-width: 320px;
+        margin-inline: auto;
+    }
+
+    /* Testimonials Section End */
+
+    /* CTA Section Start */
+
+    .cta .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .cta .cta-section {
+        flex-direction: column;
+        padding-top: 100px;
+        background-color: #1E1E1E;
+    }
+
+    .cta .cta-section .cta-text {
+        max-width: 300px;
+        margin-left: 0;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    /* CTA Section End */
+
+    /* Footer Section Start */
+
+    footer {
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+
+    footer .footer-contact {
+        margin-left: 0;
+    }
+
+    footer .footer-links,
+    footer .footer-contact {
+        margin-bottom: 50px;
+    }
+
+    /* Footer Section End */
+
+
+}
+
+/* Media Queries Phones End */
+
+/* Media Queries Tablets Start */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Features Section Start */
+
+    .features {
+        margin: 100px 0;
+    }
+
+    .features .feat-box {
+        max-width: 600px;
+        margin-top: 50px;
+        margin-inline: auto;
+    }
+
+    .features .feat-box span {
+        font-size: 24px;
+    }
+
+    .features .feat-box p {
+        font-size: 18px;
+    }
+
+    /* Features Section End */
+
+    /* Gallery Section Start */
+
+    .gallery {
+        margin: 100px 0;
+    }
+
+    /* Gallery Section End */
+
+    /* Partners Section Start */
+
+    .partners .logos-holder {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 495px;
+    }
+
+    .partners .logos-holder img {
+        margin-top: 40px;
+    }
+
+    /* Partners Section End */
+
+    /* CTA Section Start */
+
+    .cta .cta-section .cta-text {
+        margin-left: 50px;
+    }
+
+    .cta .cta-section .cta-text h1 {
+        font-size: 32px;
+    }
+
+    .cta .cta-section .cta-text a {
+        padding: 15px 20px;
+    }
+
+    /* CTA Section End */
+
+    /* Testimonials Section Start */
+
+    .testimonials {
+        margin: 100px 0;
+    }
+
+    /* Testimonials Section End */
+
+    /* Footer Section Start */
+
+    footer {
+        margin: 100px 0 50px;
+    }
+
+    footer .footer-links,
+    footer .footer-contact {
+        margin-bottom: 50px;
+    }
+
+    footer .footer-contact {
+        margin-left: 0;
+    }
+
+    /* Footer Section End */
+}
+
+/* Media Queries Tablets End */
+
+/* Media Queries After Mobiles Start */
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+    /* Main Section Start */
+
+    .main section h1 {
+        font-size: 50px;
+    }
+
+    /* Main Section End */
+
+    /* Features Section Start */
+
+    .features {
+        margin: 100px 0;
+    }
+
+    .features .feat-box {
+        max-width: 600px;
+        margin-top: 50px;
+        margin-inline: auto;
+    }
+
+    .features .feat-box span {
+        font-size: 24px;
+    }
+
+    .features .feat-box p {
+        font-size: 18px;
+    }
+
+    /* Features Section End */
+
+    /* Contents Section Start */
+
+    .contents .contents-card a {
+        padding: 15px 20px;
+    }
+
+    /* Contents Section End */
+
+    /* Gallery Section Start */
+
+    .gallery {
+        margin: 100px 0;
+    }
+
+    /* Gallery Section End */
+
+    /* Partners Section Start */
+
+    .partners .logos-holder {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 495px;
+    }
+
+    .partners .logos-holder img {
+        margin-top: 40px;
+    }
+
+    /* Partners Section End */
+
+    /* Testimonails Section Start */
+
+    .testimonials {
+        margin: 100px 0;
+    }
+
+    /* Testimonails Section End */
+
+    /* CTA Section Start */
+
+    /* .cta .container {
+        padding: 0;
+        margin: 0;
+    } */
+
+    .cta .cta-section {
+        flex-direction: column;
+        padding-top: 100px;
+        background-color: #1E1E1E;
+    }
+
+    .cta .cta-section .cta-text {
+        max-width: 300px;
+        margin-left: 0;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    /* CTA Section End */
+
+    /* Footer Section Start */
+
+    footer {
+        margin: 100px 0 50px;
+    }
+
+    footer .footer-links,
+    footer .footer-contact {
+        margin-bottom: 50px;
+    }
+
+    footer .footer-contact {
+        margin-left: 0;
+    }
+
+    footer .footer-links {
+        max-width: 250px;
+    }
+
+    footer .row {
+        flex-direction: row;
+    }
+
+    footer .some-screens {
+        max-width: 200px;
+    }
+
+    footer .some-screens-contact {
+        max-width: 340px;
+    }
+
+    /* Footer Section End */
+}
+
+/* Media Queries After Mobiles End */
